@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{974E940B-5767-4EED-A570-9D8C9FE96C1F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HXS_Engine</RootNamespace>
+    <AssemblyName>HXS_Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\DesignToolServer\bin\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DynamicVariables\HxsDynamicFunction.cs" />
+    <Compile Include="DynamicVariables\HxsReadOnlyVariable.cs" />
+    <Compile Include="DynamicVariables\IInfiniteLoopDetection.cs" />
+    <Compile Include="Expressions\ExpressionTokens\HxExpressionToken.cs" />
+    <Compile Include="Expressions\ExpressionTokens\HxsExpression.cs" />
+    <Compile Include="Expressions\ExpressionTokens\HxsExpressionConditionalOperator.cs" />
+    <Compile Include="Expressions\ExpressionTokens\HxsExpressionConstant.cs" />
+    <Compile Include="Expressions\ExpressionTokens\HxsExpressionFunction.cs" />
+    <Compile Include="Expressions\ExpressionTokens\HxsExpressionVariable.cs" />
+    <Compile Include="Expressions\ExpressionTokens\IExecutableToken.cs" />
+    <Compile Include="Expressions\HxsExceptions.cs" />
+    <Compile Include="Expressions\ExpressionTokens\HxsExpressionOperator.cs" />
+    <Compile Include="Expressions\ExpressionTokens\IExternals.cs" />
+    <Compile Include="Expressions\IHxsFunctionExecuter.cs" />
+    <Compile Include="Expressions\IHxsVariableProvider.cs" />
+    <Compile Include="DynamicVariables\HxsDynamicVariable.cs" />
+    <Compile Include="DynamicVariables\HxsDynamicVariablePool.cs" />
+    <Compile Include="DynamicVariables\IHxsVariable.cs" />
+    <Compile Include="Hashing\BCrypt.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

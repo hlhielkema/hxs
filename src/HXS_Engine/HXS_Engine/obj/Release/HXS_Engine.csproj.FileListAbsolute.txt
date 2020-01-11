@@ -1,0 +1,9 @@
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\HXS_Engine\HXS_Engine\bin\Release\HXS_Engine.dll.config
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\HXS_Engine\HXS_Engine\bin\Release\HXS_Engine.dll
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\HXS_Engine\HXS_Engine\bin\Release\HXS_Engine.pdb
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\HXS_Engine\HXS_Engine\obj\Release\HXS_Engine.dll
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\HXS_Engine\HXS_Engine\obj\Release\HXS_Engine.pdb
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\DesignToolServer\bin\bin\HXS_Engine.dll.config
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\DesignToolServer\bin\bin\HXS_Engine.dll
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\DesignToolServer\bin\bin\HXS_Engine.pdb
+C:\Users\hh\Documents\Visual Studio 2012\Projects\OnlineDesignTool\HXS_Engine\HXS_Engine\obj\Release\HXS_Engine.csprojResolveAssemblyReference.cache
