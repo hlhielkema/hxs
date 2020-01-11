@@ -1,6 +1,8 @@
 # HXS
 HXS can parse and execute  simple code expressions. It can be easily integrated in other tools. HXS does not require any NuGet packages. The code was written in 2014 as part of a personal project.
 
+![screenshot](img/screenshot.png)
+
 ## Examples
 ```
 hxs\> "Result: " + (y > 88 ? "A":"B")
